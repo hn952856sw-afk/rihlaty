@@ -1,4 +1,3 @@
-```html
 <!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>رحلتي – Rihlaty</title>
 <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@700&family=Noto+Naskh+Arabic:wght@500;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
@@ -13,7 +12,7 @@ header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:va
 nav{order:3;width:100%;display:flex;gap:24px;overflow-x:auto}nav a{color:var(--mu);text-decoration:none;padding:8px 0;white-space:nowrap;font-size:15px;border-bottom:2px solid transparent}nav a.on{color:var(--tx);border-color:var(--gold)}
 .tg{display:flex;gap:14px}.tg button{background:none;border:0;color:var(--mu);font:inherit;font-size:15px;cursor:pointer}
 main{max-width:1080px;margin:0 auto;padding:0 16px 48px}
-.hero{position:relative;overflow:hidden;margin:28px 0 0;padding:clamp(32px,7vw,80px);border-radius:12px;background:#2a4d3e;color:#F5F0E8}.hero>*{position:relative}.hero::before,.hero::after{content:'';position:absolute;border-radius:50%;border:1px solid rgba(201,169,95,.28);pointer-events:none}.hero::before{width:520px;height:520px;top:-260px;inset-inline-start:-190px}.hero::after{width:300px;height:300px;top:-150px;inset-inline-start:-80px}.hero .btn.o{color:#F5F0E8;border-color:rgba(245,240,232,.5)}.idx{display:flex;margin-top:56px;border-top:1px solid rgba(245,240,232,.25)}.idx button{flex:1;background:none;border:0;border-inline-start:1px solid rgba(245,240,232,.4);color:rgba(245,240,232,.55);padding:36px 12px 0;font:inherit;cursor:pointer;text-align:start}.eb{margin:64px 0 0;font:12px/1 ui-monospace,monospace;letter-spacing:.2em;color:var(--mu)}.hd2{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:20px}.hd2 h2{margin:8px 0 0}.all{color:var(--tx);text-decoration:none}
+.hero{position:relative;overflow:hidden;margin:28px 0 0;padding:clamp(32px,7vw,80px);border-radius:12px;background:#214C3B;color:#F5F0E8}.hero>*{position:relative}.hero::before,.hero::after{content:'';position:absolute;border-radius:50%;border:1px solid rgba(201,169,95,.28);pointer-events:none}.hero::before{width:520px;height:520px;top:-260px;inset-inline-start:-190px}.hero::after{width:300px;height:300px;top:-150px;inset-inline-start:-80px}.hero .btn.o{color:#F5F0E8;border-color:rgba(245,240,232,.5)}.idx{display:flex;margin-top:56px;border-top:1px solid rgba(245,240,232,.25)}.idx button{flex:1;background:none;border:0;border-inline-start:1px solid rgba(245,240,232,.4);color:rgba(245,240,232,.55);padding:36px 12px 0;font:inherit;cursor:pointer;text-align:start}.eb{margin:64px 0 0;font:12px/1 ui-monospace,monospace;letter-spacing:.2em;color:var(--mu)}.hd2{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:20px}.hd2 h2{margin:8px 0 0}.all{color:var(--tx);text-decoration:none}
 .hero h1{font:500 clamp(40px,9vw,92px)/1.35 'Noto Naskh Arabic',serif;margin:0 0 24px}.hero p{max-width:600px;color:rgba(245,240,232,.85);font-size:16px;margin:0 0 40px}
 .btn{display:inline-block;background:var(--gold);color:var(--g2);border:0;border-radius:3px;padding:12px 26px;font:700 16px Tajawal,sans-serif;cursor:pointer;text-decoration:none;margin:4px 0;margin-inline-end:8px}.btn.o{background:transparent;border:1px solid var(--gold);color:var(--gold)}.btn.s{padding:4px 12px;font-size:14px}
 main .btn.o{color:var(--tx);border-color:var(--g)}
@@ -70,14 +69,53 @@ const r={lodging:d.h[l]*Math.ceil(ad/2)*(n-1),transport:p.transport==='car'?200*
 function rank(p){return D.map((d,i)=>{const q={...p,di:i,over:{}},days=gen(q,i),c=calc(q,days),s=days.flat().reduce((a,id)=>a+score(d.a[id],p),0),ok=c.total<=p.budget;return{i,s:s+(ok?4:-Math.min(8,(c.total/p.budget-1)*10)),total:c.total,ok}}).sort((a,b)=>b.s-a.s)}
 const fav=()=>S.get('rl_f',[]);
 function hdr(){const h=location.hash.slice(1)||'home',v=h.startsWith('dest-')?'dests':h;$('#hd').innerHTML=`<a class="logo" href="#home">${L==='ar'?'رحلتي':'Rihlaty'}</a><span class="tag">${t('tag')}</span><div class="tg"><button data-a="lang">${L==='ar'?'الإنجليزية':'العربية'}</button><button data-a="theme">${TH==='dark'?'☀':'☾'}</button><a class="us" href="#trips" aria-label="${t('trips')}"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg></a></div><nav>${['home','plan','dests','trips'].map(k=>`<a href="#${k}" class="${v===k?'on':''}">${t(k)}</a>`).join('')}</nav>`;$('#ft').textContent=t('ft')}
-const RG={riyadh:['الوسطى','Central','تراث معاصر','Contemporary heritage'],jeddah:['البحر الأحمر','Red Sea','ثقافة ساحلية','Coastal culture'],alula:['الشمال الغربي','Northwest','مناظر عريقة','Ancient landscapes'],makkah:['الغربية','Western','وجهة العمرة','Umrah destination'],madinah:['الغربية','Western','سكينة وتمور','Calm and dates'],abha:['الجنوب','South','ضباب وجبال','Mist and mountains'],taif:['الغربية','Western','مصيف الورد','Rose retreat'],neom:['الشمال الغربي','Northwest','شواطئ وأودية','Beaches and canyons'],jazan:['الجنوب','South','جزر وتراث','Islands and heritage'],khobar:['الشرقية','Eastern','كورنيش الخليج','Gulf corniche']};const dcard=i=>{const d=D[i],r=RG[d.id];return`<a class="dc" href="#dest-${d.id}" style="--h:${i*37%360}"><span class="rg">${x(r.slice(0,2))}</span><b>${x(d.n)}</b><small>${x(r.slice(2))}</small><i class="ar">↗</i></a>`};
+const RG={riyadh:['الوسطى','Central','تراث معاصر','Contemporary heritage'],jeddah:['البحر الأحمر','Red Sea','ثقافة ساحلية','Coastal culture'],alula:['الشمال الغربي','Northwest','مناظر عريقة','Ancient landscapes'],makkah:['الغربية','Western','وجهة العمرة','Umrah destination'],madinah:['الغربية','Western','سكينة وتمور','Calm and dates'],abha:['الجنوب','South','ضباب وجبال','Mist and mountains'],taif:['الغربية','Western','مصيف الورد','Rose retreat'],neom:['الشمال الغربي','Northwest','شواطئ وأودية','Beaches and canyons'],jazan:['الجنوب','South','جزر وتراث','Islands and heritage'],khobar:['الشرقية','Eastern','كورنيش الخليج','Gulf corniche']};
+
+const DEST_IMAGES = {
+  riyadh: "https://images.unsplash.com/photo-1586724237569-f3d025d76a5c?auto=format&fit=crop&w=1200&q=85",
+  jeddah: "https://images.unsplash.com/photo-1578895101408-1a3640d782ea?auto=format&fit=crop&w=1200&q=85",
+  makkah: "https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?auto=format&fit=crop&w=1200&q=85",
+  madinah: "https://images.unsplash.com/photo-1564769625905-50e93615e769?auto=format&fit=crop&w=1200&q=85",
+  alula: "https://images.unsplash.com/photo-1682687220063-4742bd7fd538?auto=format&fit=crop&w=1200&q=85",
+  abha: "https://images.unsplash.com/photo-1618172193763-c511deb635ca?auto=format&fit=crop&w=1200&q=85",
+  taif: "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=85",
+  neom: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=85",
+  jazan: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=85",
+  khobar: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=85"
+};
+
+const dcard=i=>{
+  const d=D[i],r=RG[d.id];
+  return `
+  <a class="dc"
+     href="#dest-${d.id}"
+     style="
+       --h:${i*37%360};
+       background-color:hsl(${i*37%360} 22% 30%);
+       background-image:
+       linear-gradient(
+         180deg,
+         rgba(20,35,28,0.05) 20%,
+         rgba(20,35,28,0.88) 100%
+       ),
+       url('${DEST_IMAGES[d.id]}');
+       background-size:cover;
+       background-position:center;
+     ">
+    <span class="rg">${x(r.slice(0,2))}</span>
+    <b>${x(d.n)}</b>
+    <small>${x(r.slice(2))}</small>
+    <i class="ar">↗</i>
+  </a>`;
+};
+
 function home(){return`<section class="hero"><div><h1>${t('hero')}</h1><p>${t('heroP')}</p><a class="btn" href="#plan">${L==='ar'?'←':'→'} ${t('go')}</a><a class="btn o" href="#dests">${t('ex')}</a><div class="idx"><button data-a="sc" data-i="s1">${t('i1')}</button><button data-a="sc" data-i="s2">${t('i2')}</button><button data-a="sc" data-i="s3">${t('i3')}</button></div></div></section>
 <p class="eb" id="s1">${t('eb')}</p><div class="hd2"><h2>${t('sT2')}</h2><a href="#dests" class="all">${t('all')} ${L==='ar'?'←':'→'}</a></div><div class="grid">${[0,1,4].map(i=>dcard(i)).join('')}</div>
 <h2 id="s2">${t('rT')}</h2><p class="sub">${t('rS')}</p><div class="grid">${RT.map((r,i)=>`<div class="card"><b>${x(r.n)}</b><p class="note">${r.days} ${L==='ar'?'أيام':'days'} · ${x(D.find(d=>d.id===r.d).n)}</p><button class="btn s" data-a="route" data-i="${i}">${t('go')}</button></div>`).join('')}</div>
 <h2 id="s3">${t('sT')}</h2><p class="sub">${t('sS')}</p><div class="grid">${ST.map(s=>`<div class="card"><b>${s[L==='ar'?0:1]}</b><p class="note">${s[L==='ar'?2:3]}</p></div>`).join('')}</div>
 <h2>${t('fT')}</h2><div class="grid">${t('why').map(w=>`<div class="card">${w}</div>`).join('')}</div>`}
 function dpage(id){const i=D.findIndex(d=>d.id===id);if(i<0)return home();const d=D[i],f=fav().includes(id);return`<h2>${d.e} ${x(d.n)}</h2><p class="sub">${x(d.d)}</p><button class="btn s" data-a="fav" data-i="${id}">${f?'♥':'♡'} ${t('favs')}</button><button class="btn s" data-a="here" data-i="${i}">${t('plHere')}</button>
-<div class="grid" style="margin-top:14px"><div class="card"><b>${t('hl')}</b>${d.a.map(a=>`<div class="it"><div>${x(a.n)}<small>${a.h} ${L==='ar'?'ساعة':'h'} · ${a.g.split('').map(c=>x(TG[c])).join('، ')}</small></div><span>${a.c?money(a.c):(L==='ar'?'مجاني':'Free')}</span></div>`).join('')}</div>
+<div class="grid" style="margin-top:14px"><div class="card"><b>${t('hl')}</b>${d.a.map(a=>`<div class="it"><div>${x(a.n)}<small>${a.h} ${L==='ar'?'ساعة':'h'} · ${a.c?money(a.c):(L==='ar'?'مجاني':'Free')}</small></div><span>${a.c?money(a.c):(L==='ar'?'مجاني':'Free')}</span></div>`).join('')}</div>
 <div class="card"><b>${t('rs')}</b>${d.r.map(r=>`<p>${x(r)}</p>`).join('')}<b>${t('st')}</b>${d.h.map((h,j)=>`<div class="it"><span>${t('stay')[j]}</span><span>${money(h)}</span></div>`).join('')}</div>
 <div class="card"><b>${t('bt')}</b><p>${x(d.b)}</p><b>${t('tp')}</b><p>${x(d.t)}</p><p class="note">${t('est')}</p></div></div>`}
 const opt=(o,v)=>Object.entries(o).map(([k,l])=>`<option value="${k}"${k==v?' selected':''}>${l}</option>`).join('');
@@ -136,4 +174,3 @@ else if(f==='cal'){P.cal=el.value;rr()}
 else P[f]=el.type==='number'?+el.value:el.value});
 addEventListener('hashchange',render);render();
 </script></body></html>
-```
