@@ -1,159 +1,177 @@
-<!doctype html>
-<html lang="ar" dir="rtl">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>رحلتي - رفيقك للسفر في السعودية</title>
-<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@700&family=Noto+Naskh+Arabic:wght@400;500;700&display=swap" rel="stylesheet">
-<style>
-:root{--bg:#0f1813;--card:#18261e;--card-border:rgba(255,255,255,0.08);--tx:#f4f0e6;--mu:rgba(244,240,230,0.6);--gold:#d4af37}
-*{box-sizing:border-box;margin:0;padding:0}
-body{background:var(--bg);color:var(--tx);font-family:'Noto Naskh Arabic',serif;line-height:1.6;-webkit-font-smoothing:antialiased}
-header{position:sticky;top:0;background:rgba(15,24,19,0.95);backdrop-filter:blur(10px);z-index:100;padding:16px 20px;border-bottom:1px solid var(--card-border);display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:15px}
-.logo-container{display:flex;align-items:center;gap:8px}
-.logo{font:700 28px/1 'Aref Ruqaa',serif;color:var(--tx);text-decoration:none}
-.dot{width:6px;height:6px;background:var(--gold);border-radius:50%}
-.sub-logo{font-size:12px;color:var(--mu)}
-.actions{display:flex;align-items:center;gap:12px}
-.btn-icon{background:none;border:1px solid var(--card-border);color:var(--tx);padding:8px 12px;border-radius:20px;cursor:pointer;font-size:14px}
-nav{width:100%;display:flex;gap:20px;border-top:1px solid var(--card-border);padding-top:12px;margin-top:4px}
-nav a{color:var(--mu);text-decoration:none;font-size:14px}
-nav a.active{color:var(--gold);font-weight:700}
-main{max-width:1100px;margin:0 auto;padding:24px 20px 80px}
-.section-header{display:flex;justify-content:space-between;align-items:baseline;margin:30px 0 20px}
-h2{font:500 26px/1.3 'Noto Naskh Arabic',serif}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px}
-.card{position:relative;height:380px;border-radius:20px;overflow:hidden;background-size:cover;background-position:center;display:flex;flex-direction:column;justify-content:flex-end;padding:24px;border:1px solid var(--card-border);box-shadow:0 8px 24px rgba(0,0,0,0.2);color:#fff}
-.card::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 30%,rgba(0,0,0,0.85) 100%)}
-.card-content{position:relative;z-index:2}
-.region{font-size:12px;color:var(--gold);font-weight:700;margin-bottom:4px}
-.title{font:700 26px/1.2 'Noto Naskh Arabic',serif;margin-bottom:4px}
-.desc{font-size:13px;color:rgba(255,255,255,0.8)}
-.icon-btn{position:absolute;bottom:24px;left:24px;width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,0.15);backdrop-filter:blur(5px);display:flex;align-items:center;justify-content:center;z-index:3;border:1px solid rgba(255,255,255,0.3)}
-footer{text-align:center;padding:40px 20px;font-size:13px;color:var(--mu);border-top:1px solid var(--card-border);margin-top:60px}
-</style>
-</head>
-<body>
+‏<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>رحلتي – Rihlaty</title>
+‏<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@700&family=Noto+Naskh+Arabic:wght@500;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+‏<style>
+‏:root{--g:#214C3B;--g2:#173528;--iv:#F4F0E5;--gold:#C9A95F;--bg:#F5F0E8;--card:#fbf8f1;--tx:#173528;--mu:#5d6f65;--ln:#dcd5c0;--bad:#a43c2f;--ok:#2d7a4f;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+‏@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#0e1b15;--card:#162a21;--tx:#F4F0E5;--mu:#a9b8ae;--ln:#2a4639;--bad:#e5806f;--ok:#6fcf97}}
+‏:root[data-theme="dark"]{color-scheme:dark;--bg:#0e1b15;--card:#162a21;--tx:#F4F0E5;--mu:#a9b8ae;--ln:#2a4639;--bad:#e5806f;--ok:#6fcf97}
+‏html{scroll-padding-top:env(safe-area-inset-top,0px)}*{box-sizing:border-box}
+‏body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.7 Tajawal,"Segoe UI",Tahoma,sans-serif}
+‏body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
+‏header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);color:var(--tx);border-bottom:1px solid var(--ln);display:flex;flex-wrap:wrap;align-items:center;gap:4px 14px;padding:12px 20px 0}.tag{font-size:14px;color:var(--mu)}.tag::before{content:'';display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--gold);margin-inline-end:8px}.us{width:44px;height:44px;border-radius:50%;background:var(--g);display:grid;place-items:center;color:#F5F0E8}.tg{margin-inline-start:auto;align-items:center}
+‏.logo{font:700 34px/1.3 'Aref Ruqaa',serif;color:var(--g);text-decoration:none}:root[data-theme=dark] .logo{color:var(--iv)}
+‏nav{order:3;width:100%;display:flex;gap:24px;overflow-x:auto}nav a{color:var(--mu);text-decoration:none;padding:8px 0;white-space:nowrap;font-size:15px;border-bottom:2px solid transparent}nav a.on{color:var(--tx);border-color:var(--gold)}
+‏.tg{display:flex;gap:14px}.tg button{background:none;border:0;color:var(--mu);font:inherit;font-size:15px;cursor:pointer}
+‏main{max-width:1080px;margin:0 auto;padding:0 16px 48px}
+‏.hero{position:relative;overflow:hidden;margin:28px 0 0;padding:clamp(32px,7vw,80px);border-radius:12px;background:#2a4d3e;color:#F5F0E8}.hero>*{position:relative}.hero::before,.hero::after{content:'';position:absolute;border-radius:50%;border:1px solid rgba(201,169,95,.28);pointer-events:none}.hero::before{width:520px;height:520px;top:-260px;inset-inline-start:-190px}.hero::after{width:300px;height:300px;top:-150px;inset-inline-start:-80px}.hero .btn.o{color:#F5F0E8;border-color:rgba(245,240,232,.5)}.idx{display:flex;margin-top:56px;border-top:1px solid rgba(245,240,232,.25)}.idx button{flex:1;background:none;border:0;border-inline-start:1px solid rgba(245,240,232,.4);color:rgba(245,240,232,.55);padding:36px 12px 0;font:inherit;cursor:pointer;text-align:start}.eb{margin:64px 0 0;font:12px/1 ui-monospace,monospace;letter-spacing:.2em;color:var(--mu)}.hd2{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:20px}.hd2 h2{margin:8px 0 0}.all{color:var(--tx);text-decoration:none}
+‏.hero h1{font:500 clamp(40px,9vw,92px)/1.35 'Noto Naskh Arabic',serif;margin:0 0 24px}.hero p{max-width:600px;color:rgba(245,240,232,.85);font-size:16px;margin:0 0 40px}
+‏.btn{display:inline-block;background:var(--gold);color:var(--g2);border:0;border-radius:3px;padding:12px 26px;font:700 16px Tajawal,sans-serif;cursor:pointer;text-decoration:none;margin:4px 0;margin-inline-end:8px}.btn.o{background:transparent;border:1px solid var(--gold);color:var(--gold)}.btn.s{padding:4px 12px;font-size:14px}
+‏main .btn.o{color:var(--tx);border-color:var(--g)}
+‏h2{font:500 clamp(30px,5vw,44px)/1.3 'Noto Naskh Arabic',serif;margin:56px 0 6px}.sub{color:var(--mu);margin:0 0 16px}
+‏.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+‏.card{background:var(--card);border:1px solid var(--ln);border-radius:14px;padding:16px}
+‏.dc{position:relative;display:flex;flex-direction:column;justify-content:flex-end;min-height:400px;padding:24px;border-radius:8px;overflow:hidden;color:#F5F0E8;text-decoration:none;background:linear-gradient(180deg,rgba(20,35,28,0) 35%,rgba(20,35,28,.8)),linear-gradient(150deg,hsl(var(--h) 22% 40%),hsl(calc(var(--h) + 30) 28% 22%))}.dc .rg{color:var(--gold);font-size:13px;letter-spacing:.1em}.dc small{opacity:.8;font-size:14px}.dc .ar{position:absolute;bottom:24px;inset-inline-end:24px;width:46px;height:46px;border:1px solid rgba(245,240,232,.6);border-radius:50%;display:grid;place-items:center;font-style:normal}
+‏.dc b{font:500 34px/1.3 'Noto Naskh Arabic',serif}.pill{display:inline-block;background:var(--g);color:var(--iv);border-radius:12px;padding:0 10px;font-size:13px;margin:2px}
+‏form,.fm{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+‏label{display:block;font-size:14px;color:var(--mu)}input,select{width:100%;padding:9px 10px;border:1px solid var(--ln);border-radius:10px;background:var(--bg);color:var(--tx);font:inherit}
+‏.chips{display:flex;flex-wrap:wrap;gap:6px;grid-column:1/-1}.chips label{display:flex;align-items:center;gap:4px;background:var(--bg);border:1px solid var(--ln);border-radius:20px;padding:3px 12px;color:var(--tx)}.chips input{width:auto}
+‏.note{font-size:13px;color:var(--mu)}.day{margin:12px 0}.day h3{margin:0 0 8px;color:var(--gold)}
+‏.it{display:flex;gap:10px;justify-content:space-between;align-items:flex-start;padding:8px 0;border-top:1px dashed var(--ln)}.it small{color:var(--mu);display:block}
+‏.tr{font-size:13px;color:var(--mu);padding:2px 0 2px 0}.ib{background:none;border:1px solid var(--ln);border-radius:8px;color:var(--tx);cursor:pointer;padding:0 8px;font:inherit}
+‏table{width:100%;border-collapse:collapse}td{padding:6px 0;border-top:1px solid var(--ln)}td input{width:110px}.bar{height:10px;background:var(--ln);border-radius:6px;overflow:hidden}.bar i{display:block;height:100%;background:var(--ok)}.bar.x i{background:var(--bad)}
+‏.bad{color:var(--bad)}.ok{color:var(--ok)}footer{text-align:center;color:var(--mu);font-size:13px;padding:24px 16px}
+‏@media(max-width:600px){h2{font-size:24px}.hero{padding:44px 16px}}
+‏</style></head><body><header id="hd"></header><main id="app"></main><footer id="ft"></footer>
+‏<script>
+‏const A=(a,e,c,h,g,z,s)=>({n:[a,e],c,h,g,z,s});
+‏const D=[
+‏{id:'riyadh',e:'🏙️',n:['الرياض','Riyadh'],h:[250,550,1400],d:['عاصمة تجمع التراث النجدي بالأبراج والمتاحف والصحراء القريبة.','A capital where Najdi heritage meets towers, museums and nearby desert.'],b:['من أكتوبر إلى مارس','October to March'],t:['الصيف شديد الحرارة؛ خصّص الظهيرة للأماكن المغلقة.','Summers are very hot; keep midday for indoor stops.'],r:[['مندي وكبسة نجدية','Najdi kabsa and mandi'],['مطعم عصري في بوليفارد رياض سيتي','Modern dining at Boulevard Riyadh City']],a:[A('الدرعية التاريخية','Historic Diriyah',60,3,'cdm',1,2),A('المتحف الوطني','National Museum',15,2.5,'cf',2,0),A('حافة العالم','Edge of the World',120,5,'an',3,0),A('بوليفارد رياض سيتي','Boulevard Riyadh City',100,3,'fds',2,2)]},
+‏{id:'jeddah',e:'🌊',n:['جدة','Jeddah'],h:[230,520,1300],d:['بوابة البحر الأحمر بحارة البلد التاريخية والكورنيش والغوص.','Red Sea gateway with historic Al-Balad, the Corniche and diving.'],b:['من نوفمبر إلى مارس','November to March'],t:['البلد تُزار صباحًا قبل الحرّ والزحام.','Visit Al-Balad in the morning, before heat and crowds.'],r:[['مأكولات بحرية على الكورنيش','Seafood on the Corniche'],['مطعم حجازي في البلد','Hijazi restaurant in Al-Balad']],a:[A('جدة التاريخية (البلد)','Historic Jeddah (Al-Balad)',0,3,'cd',1,0),A('كورنيش جدة','Jeddah Corniche',0,2,'rmf',2,2),A('غوص وسنوركلينغ بالبحر الأحمر','Red Sea snorkeling',250,4,'an',3,0),A('أكواريوم','Aquarium',90,2,'f',2,1)]},
+‏{id:'makkah',e:'🕋',n:['مكة المكرمة','Makkah'],h:[300,650,1500],d:['قلب العالم الإسلامي ووجهة العمرة. دخول المدينة المركزية للمسلمين فقط.','The heart of the Islamic world and Umrah destination. Central Makkah is open to Muslims only.'],b:['من نوفمبر إلى فبراير','November to February'],t:['احجز عمرتك عبر تطبيق نسك قبل السفر.','Book Umrah through the Nusuk app before travelling.'],r:[['مطاعم متنوعة حول الحرم','Varied restaurants near the Haram'],['مطعم شعبي في العزيزية','Local restaurant in Aziziyah']],a:[A('أداء العمرة والصلاة بالمسجد الحرام','Umrah and prayer at the Grand Mosque',0,3,'c',1,2),A('معرض عمارة الحرمين','Haramain architecture exhibition',30,2,'cf',2,0),A('جبل ثور وغار ثور','Jabal Thawr area',0,2,'cn',2,0),A('تسوق وطعام قرب الحرم','Shopping and dining by the Haram',0,2,'sd',1,1)]},
+‏{id:'madinah',e:'🌴',n:['المدينة المنورة','Madinah'],h:[230,520,1200],d:['مدينة الهدوء ومسجد النبي ومزارع التمور.','A calm city with the Prophet’s Mosque and date farms.'],b:['من نوفمبر إلى مارس','November to March'],t:['الزيارة الشرعية تُحجز عبر تطبيق نسك.','Book Rawdah visits via the Nusuk app.'],r:[['وجبات مدنية وتمور','Madinan meals and dates'],['مطعم شعبي قرب المسجد النبوي','Local restaurant near the Prophet’s Mosque']],a:[A('المسجد النبوي','Prophet’s Mosque',0,2,'c',1,2),A('مسجد قباء','Quba Mosque',0,1,'c',2,0),A('مزارع التمور','Date farms',30,2,'nfd',3,1),A('متحف المدينة','Madinah Museum',30,2,'cf',1,0)]},
+‏{id:'alula',e:'🏜️',n:['العلا','AlUla'],h:[500,1100,3500],d:['واحة صخور وحضارات تضم الحِجر والبلدة القديمة.','Oasis of rock and civilisations with Hegra and the Old Town.'],b:['من أكتوبر إلى أبريل','October to April'],t:['احجز تذاكر الحِجر مسبقًا؛ الأنشطة محدودة المقاعد.','Book Hegra tickets ahead; seats are limited.'],r:[['مطعم محلي في الواحة','Local oasis restaurant'],['عشاء تحت النجوم','Dinner under the stars']],a:[A('مواقع الحِجر','Hegra site',200,3,'ca',1,0),A('جبل الفيل وقت الغروب','Elephant Rock at sunset',50,2,'nrm',2,2),A('البلدة القديمة','AlUla Old Town',0,2,'cs',2,1),A('منطاد فوق الصحراء','Hot-air balloon',700,2,'am',3,0)]},
+‏{id:'abha',e:'⛰️',n:['أبها','Abha'],h:[260,500,1000],d:['مدينة الضباب والقرى التراثية والجبال الخضراء.','City of mist, heritage villages and green mountains.'],b:['من يونيو إلى سبتمبر','June to September'],t:['الجو بارد ليلًا حتى في الصيف؛ احمل سترة.','Nights are cool even in summer; pack a jacket.'],r:[['أكلات عسيرية','Asiri dishes'],['مطعم بإطلالة على السودة','Restaurant with a Soudah view']],a:[A('قرية رجال ألمع','Rijal Almaa Village',25,2.5,'cf',1,0),A('تلفريك السودة','Soudah cable car',120,3,'nfr',2,1),A('مشي في منتزه عسير','Asir National Park hike',0,3,'an',3,0),A('بحيرة سد أبها','Abha Dam lake',0,2,'rm',1,2)]},
+‏{id:'taif',e:'🌹',n:['الطائف','Taif'],h:[220,450,1100],d:['مصيف الورد والجبال والأجواء المعتدلة.','Summer retreat of roses, mountains and mild weather.'],b:['من أبريل إلى سبتمبر','April to September'],t:['موسم الورد في أبريل ومايو.','Rose season is April to May.'],r:[['مطعم شعبي بالهدا','Local restaurant in Al-Hada'],['مأكولات في الشفا','Dining in Al-Shafa']],a:[A('حديقة الردف','Al-Rudaf Park',0,2,'nfr',1,0),A('مزارع الورد','Rose farms',40,2,'ns',2,1),A('قصر شبرا','Shubra Palace',20,1.5,'c',1,1),A('جبال الشفا','Al-Shafa mountains',0,3,'an',3,0)]},
+‏{id:'neom',e:'🌌',n:['نيوم وتبوك','NEOM and Tabuk'],h:[700,1500,4000],d:['شواطئ وأودية على خليج العقبة ووجهات مستقبلية.','Beaches and canyons on the Gulf of Aqaba and futuristic destinations.'],b:['من أكتوبر إلى أبريل','October to April'],t:['المسافات طويلة؛ استأجر سيارة.','Distances are long; rent a car.'],r:[['مأكولات بحرية طازجة','Fresh seafood'],['مطعم محلي في تبوك','Local restaurant in Tabuk']],a:[A('وادي الديسة','Wadi Disah',150,5,'an',2,0),A('شاطئ شرما','Sharma Beach',0,3,'rm',1,1),A('غوص في خليج العقبة','Gulf of Aqaba diving',350,4,'an',1,0),A('قلعة تبوك','Tabuk Castle',0,1,'c',3,1)]},
+‏{id:'jazan',e:'🏝️',n:['جازان','Jazan'],h:[200,420,900],d:['جزر فرسان وأودية خضراء وتراث تهامي.','Farasan Islands, green valleys and Tihama heritage.'],b:['من نوفمبر إلى مارس','November to March'],t:['رحلة فرسان تحتاج يومًا كاملًا.','The Farasan trip takes a full day.'],r:[['أسماك وصيادية','Fish and sayadiya'],['مطعم تهامي','Tihami restaurant']],a:[A('جزر فرسان','Farasan Islands',300,6,'anr',1,0),A('كورنيش جازان','Jazan Corniche',0,2,'rf',2,2),A('قرية التراث','Heritage village',20,2,'c',2,1),A('وادي لجب','Wadi Lajab',50,3,'an',3,0)]},
+‏{id:'khobar',e:'🌅',n:['الخبر والدمام','Khobar and Dammam'],h:[250,520,1200],d:['مدن الخليج بالكورنيش ومركز إثراء.','Gulf cities with corniches and the Ithra centre.'],b:['من نوفمبر إلى مارس','November to March'],t:['الرطوبة عالية صيفًا.','Summers are humid.'],r:[['مأكولات بحرية','Seafood'],['مطعم شرقاوي','Eastern Province cuisine']],a:[A('مركز إثراء','Ithra Centre',50,3,'cf',2,0),A('كورنيش الخبر','Khobar Corniche',0,2,'rfm',1,1),A('رحلة قارب عند الغروب','Sunset boat trip',60,3,'rm',1,2),A('تراث الدمام','Dammam heritage',0,2,'c',2,1)]}];
+‏const TG={f:['عائلي','Family'],c:['ثقافة','Culture'],a:['مغامرة','Adventure'],n:['طبيعة','Nature'],r:['استجمام','Relax'],m:['رومانسي','Romantic'],d:['طعام','Food'],s:['تسوق','Shopping']};
+‏const T={ar:{home:'الرئيسية',plan:'خطّط رحلتك',dests:'الوجهات',trips:'رحلاتي المحفوظة',hero:'اذهب إلى مكان يبقى معك.',heroP:'رحلتي تجمع المناظر والحكايات والقرارات الصغيرة في رحلة سعودية هادئة ومدروسة.',tag:'رفيقك للسفر في السعودية',eb:'أماكن لها حكاية',sT2:'السعودية، في فصول',all:'عرض الكل',i1:'وجهات',i2:'مسارات مختارة',i3:'حكايات',go:'ابدأ التخطيط',ex:'اكتشف الوجهات',dT:'الوجهات السياحية',dS:'عشر وجهات سعودية، لكل منها صفحتها.',rT:'مسارات مقترحة',rS:'ابدأ من مسار جاهز وعدّله.',sT:'تجارب مقترحة',sS:'أفكار لرحلات تبقى في الذاكرة.',fT:'لماذا رحلتي',more:'كل الوجهات',dest:'الوجهة',auto:'اقترح لي الأنسب',cal:'التقويم',g:'ميلادي',h:'هجري',sd:'بداية الرحلة',ed:'نهايتها',ad:'بالغون',kd:'أطفال',inf:'رضع',bg:'الميزانية الإجمالية (ر.س)',ty:'نوع الرحلة',tr:'وسيلة التنقل',lv:'مستوى الإقامة',md:'وضع الرحلة',int:'الاهتمامات',gen:'أنشئ الخطة',types:{family:'عائلية',solo:'فردية',romantic:'رومانسية',adventure:'مغامرات',cultural:'ثقافية',relax:'استجمام'},trs:{car:'سيارة',taxi:'سيارات أجرة',pub:'نقل عام'},lvs:['اقتصادية','متوسطة','فاخرة'],mds:{eco:'اقتصادي',mid:'متوسط',lux:'فاخر',family:'عائلة',adventure:'مغامرة'},est:'جميع الأسعار والمسافات والأوقات تقديرية وليست أسعار حجز مؤكدة، ويمكنك تعديلها.',rec:'التوصيات',alt:'بدائل مناسبة',cheap:'بدائل أوفر ضمن ميزانيتك',itin:'برنامج الرحلة',day:'اليوم',free:'يوم حر للراحة أو إضافة نشاط',addA:'+ أضف نشاطًا',bud:'الميزانية',lod:'الإقامة',trn:'النقل',fod:'الطعام',act:'الأنشطة',tk:'التذاكر',exr:'مصاريف إضافية',tot:'الإجمالي',pp:'للفرد',bdg:'الميزانية',rem:'المتبقي',over:'تجاوزت الميزانية بمقدار',ecoB:'طبّق الوضع الاقتصادي',save:'احفظ الرحلة',saved:'تم حفظ الرحلة.',open:'فتح وتعديل',del:'حذف',none:'لا توجد رحلات محفوظة بعد.',favs:'المفضلة',hl:'أبرز المعالم والأنشطة',rs:'المطاعم المقترحة',st:'الإقامة (لليلة، تقديري)',bt:'أفضل وقت للزيارة',tp:'معلومات مفيدة',plHere:'خطّط رحلة هنا',err:'تحقق من التواريخ وعدد المسافرين والميزانية.',rst:'إعادة التقدير',h1:'كم',ft:'رحلتي – منصة تخطيط الرحلات داخل السعودية. تُحفظ رحلاتك في هذا المتصفح فقط.',stay:['فندق اقتصادي أو شقق فندقية','فندق 4 نجوم','فندق أو منتجع 5 نجوم'],lunch:'غداء',dinner:'عشاء',km:'كم',mn:'دقيقة',nt:'ليلة',sr:'ر.س',why:['خطة يومية مرتبة جغرافيًا لتقليل التنقل','ميزانية تتحدث لحظيًا مع كل تعديل','توصيات مبنية على مدخلاتك','عربي وإنجليزي ووضع ليلي']},
+‏en:{home:'Home',plan:'Plan a trip',dests:'Destinations',trips:'Saved trips',hero:'Go somewhere that stays with you.',heroP:'Rihlaty gathers views, stories and small decisions into a calm, well-considered Saudi trip.',tag:'Your travel companion in Saudi Arabia',eb:'Places with a story',sT2:'Saudi Arabia, in chapters',all:'View all',i1:'Destinations',i2:'Selected routes',i3:'Stories',go:'Start planning',ex:'Explore destinations',dT:'Saudi destinations',dS:'Ten destinations, each with its own page.',rT:'Suggested routes',rS:'Start from a ready route and adjust it.',sT:'Suggested experiences',sS:'Ideas for trips you will remember.',fT:'Why Rihlaty',more:'All destinations',dest:'Destination',auto:'Suggest the best fit',cal:'Calendar',g:'Gregorian',h:'Hijri',sd:'Trip start',ed:'Trip end',ad:'Adults',kd:'Children',inf:'Infants',bg:'Total budget (SAR)',ty:'Trip type',tr:'Transport',lv:'Accommodation level',md:'Trip mode',int:'Interests',gen:'Create plan',types:{family:'Family',solo:'Solo',romantic:'Romantic',adventure:'Adventure',cultural:'Cultural',relax:'Relaxation'},trs:{car:'Car',taxi:'Taxis',pub:'Public transport'},lvs:['Economy','Mid-range','Luxury'],mds:{eco:'Economy',mid:'Mid-range',lux:'Luxury',family:'Family',adventure:'Adventure'},est:'All prices, distances and times are estimates, not confirmed booking prices. You can edit them.',rec:'Recommendations',alt:'Good alternatives',cheap:'Cheaper options within your budget',itin:'Itinerary',day:'Day',free:'Free day to rest or add an activity',addA:'+ Add an activity',bud:'Budget',lod:'Lodging',trn:'Transport',fod:'Food',act:'Activities',tk:'Tickets',exr:'Extras',tot:'Total',pp:'Per person',bdg:'Budget',rem:'Remaining',over:'Over budget by',ecoB:'Apply economy mode',save:'Save trip',saved:'Trip saved.',open:'Open and edit',del:'Delete',none:'No saved trips yet.',favs:'Favorites',hl:'Highlights and activities',rs:'Suggested restaurants',st:'Lodging (per night, estimate)',bt:'Best time to visit',tp:'Useful tips',plHere:'Plan a trip here',err:'Check the dates, travellers and budget.',rst:'Reset estimates',h1:'Est.',ft:'Rihlaty – Saudi trip planning platform. Your trips are saved in this browser only.',stay:['Budget hotel or aparthotel','4-star hotel','5-star hotel or resort'],lunch:'Lunch',dinner:'Dinner',km:'km',mn:'min',nt:'night',sr:'SAR',why:['A geographically ordered daily plan that cuts travel time','A budget that updates live with every edit','Recommendations built on your inputs','Arabic, English and dark mode']}};
+‏const RT=[{n:['مسار التراث في الرياض','Riyadh heritage route'],d:'riyadh',ty:'cultural',days:3,i:['c']},{n:['مغامرة البحر الأحمر','Red Sea adventure'],d:'jeddah',ty:'adventure',days:4,i:['a','n']},{n:['العلا الرومانسية','Romantic AlUla'],d:'alula',ty:'romantic',days:3,i:['n','r']}];
+‏const ST=[['حكاية الغروب في العلا','Sunset story in AlUla','جبل الفيل عند الغروب ثم عشاء بين الصخور.','Elephant Rock at sunset, then dinner among the rocks.'],['صباح في بلد جدة','A morning in Al-Balad','أزقة الحجاز التاريخية قبل أن تستيقظ المدينة.','Historic Hijazi lanes before the city wakes.'],['ضباب أبها','Abha’s mist','تلفريك وقرى جبلية وهواء بارد في الصيف.','Cable cars, mountain villages and cool summer air.']];
+‏const mem={};const S={get(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return k in mem?mem[k]:d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){mem[k]=v}}};
+‏let L=S.get('rl_l','ar'),TH=S.get('rl_t',matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');
+‏const t=k=>T[L][k],x=a=>a[L==='ar'?0:1],iso=o=>{const d=new Date();d.setDate(d.getDate()+o);return d.toISOString().slice(0,10)},f0=()=>({dest:'auto',cal:'g',start:iso(14),end:iso(17),adults:2,kids:0,inf:0,budget:8000,type:'cultural',transport:'car',level:1,mode:'mid',interests:['c','n'],over:{},days:null,di:null,id:null});
+‏let P=f0();const $=s=>document.querySelector(s),nf=n=>Math.round(n).toLocaleString('en-US');
+‏const money=n=>nf(n)+' '+t('sr');
+‏function fd(iso_,c,wd=1){const d=new Date(iso_+'T12:00:00');return new Intl.DateTimeFormat((L==='ar'?'ar-SA':'en-US')+'-u-nu-latn-ca-'+(c==='h'?'islamic-umalqura':'gregory'),{weekday:wd?'long':undefined,day:'numeric',month:'long',year:'numeric'}).format(d)}
+‏const HF=new Intl.DateTimeFormat('en-u-ca-islamic-umalqura-nu-latn',{year:'numeric',month:'numeric',day:'numeric'});
+‏function hp(d){const o={};HF.formatToParts(d).forEach(p=>o[p.type]=+p.value);return o}
+‏function g2h(i){const p=hp(new Date(i+'T12:00:00'));return p.year+'/'+String(p.month).padStart(2,'0')+'/'+String(p.day).padStart(2,'0')}
+‏function h2g(s){const m=s.match(/(\d{4})\D+(\d{1,2})\D+(\d{1,2})/);if(!m)return null;const d=new Date(2023,0,1,12);for(let i=0;i<3600;i++){const p=hp(d);if(p.year==+m[1]&&p.month==+m[2]&&p.day==+m[3])return d.toISOString().slice(0,10);d.setDate(d.getDate()+1)}return null}
+‏const nDays=p=>Math.min(14,Math.max(1,Math.round((new Date(p.end)-new Date(p.start))/864e5)+1));
+‏const tagsOf=p=>({family:'f',solo:'ca',romantic:'mr',adventure:'an',cultural:'c',relax:'r'}[p.type]+p.interests.join('')).split('');
+‏function lvl(p){const l=+p.level,m=p.mode;return m==='eco'?0:m==='lux'?2:m==='mid'?1:m==='family'?Math.max(l,1):m==='adventure'?Math.min(l,1):l}
+‏function score(a,p){let s=0;const T_=tagsOf(p);for(const c of a.g)if(T_.includes(c))s++;if(p.mode==='eco'&&a.c>120)s-=3;if(p.mode==='lux'&&a.c>=100)s++;if(p.mode==='family'&&a.g.includes('f'))s+=3;if(p.mode==='adventure'&&a.g.includes('a'))s+=3;if(+p.kids>0&&a.g.includes('a')&&!a.g.includes('f'))s--;if(+p.inf>0&&a.h>4)s--;if(p.mode!=='lux'&&a.c*(+p.adults)>p.budget*.25)s-=2;return s}
+‏function gen(p,di){const d=D[di],n=nDays(p),per=(+p.kids>0||p.type==='relax'||p.mode==='family')?2:3,need=Math.min(d.a.length,n*per);const ids=d.a.map((_,i)=>i).sort((a,b)=>score(d.a[b],p)-score(d.a[a],p)).slice(0,need).sort((a,b)=>d.a[a].z-d.a[b].z);const days=Array.from({length:n},()=>[]);ids.forEach((id,i)=>days[Math.floor(i*n/ids.length)].push(id));days.forEach(a=>a.sort((u,v)=>d.a[u].s-d.a[v].s));return days}
+‏function calc(p,days){const d=D[p.di],n=days.length,l=lvl(p),ad=+p.adults,kd=+p.kids,pp=ad+kd;let ac=0,tk=0;days.flat().forEach(i=>{const a=d.a[i],c=a.c*(ad+kd*.5);if(a.g.includes('a')||a.c>=150)ac+=c;else tk+=c});
+‏const r={lodging:d.h[l]*Math.ceil(ad/2)*(n-1),transport:p.transport==='car'?200*n:p.transport==='taxi'?180*n:35*pp*n,food:[90,170,380][l]*(ad+kd*.6)*n,activities:ac,tickets:tk};r.extras=Object.values(r).reduce((a,b)=>a+b,0)*.08;for(const k in r)if(p.over[k]!=null)r[k]=p.over[k];return{r,total:Object.values(r).reduce((a,b)=>a+b,0)}}
+‏function rank(p){return D.map((d,i)=>{const q={...p,di:i,over:{}},days=gen(q,i),c=calc(q,days),s=days.flat().reduce((a,id)=>a+score(d.a[id],p),0),ok=c.total<=p.budget;return{i,s:s+(ok?4:-Math.min(8,(c.total/p.budget-1)*10)),total:c.total,ok}}).sort((a,b)=>b.s-a.s)}
+‏const fav=()=>S.get('rl_f',[]);
+‏function hdr(){const h=location.hash.slice(1)||'home',v=h.startsWith('dest-')?'dests':h;$('#hd').innerHTML=`<a class="logo" href="#home">${L==='ar'?'رحلتي':'Rihlaty'}</a><span class="tag">${t('tag')}</span><div class="tg"><button data-a="lang">${L==='ar'?'الإنجليزية':'العربية'}</button><button data-a="theme">${TH==='dark'?'☀':'☾'}</button><a class="us" href="#trips" aria-label="${t('trips')}"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg></a></div><nav>${['home','plan','dests','trips'].map(k=>`<a href="#${k}" class="${v===k?'on':''}">${t(k)}</a>`).join('')}</nav>`;$('#ft').textContent=t('ft')}
+‏const RG={riyadh:['الوسطى','Central','تراث معاصر','Contemporary heritage'],jeddah:['البحر الأحمر','Red Sea','ثقافة ساحلية','Coastal culture'],alula:['الشمال الغربي','Northwest','مناظر عريقة','Ancient landscapes'],makkah:['الغربية','Western','وجهة العمرة','Umrah destination'],madinah:['الغربية','Western','سكينة وتمور','Calm and dates'],abha:['الجنوب','South','ضباب وجبال','Mist and mountains'],taif:['الغربية','Western','مصيف الورد','Rose retreat'],neom:['الشمال الغربي','Northwest','شواطئ وأودية','Beaches and canyons'],jazan:['الجنوب','South','جزر وتراث','Islands and heritage'],khobar:['الشرقية','Eastern','كورنيش الخليج','Gulf corniche']};
 
-<header>
-  <div class="logo-container">
-    <a href="#" class="logo">رحلتي</a>
-    <span class="dot"></span>
-    <span class="sub-logo">رفيقك للسفر في السعودية</span>
-  </div>
-  <div class="actions">
-    <button class="btn-icon">الإنجليزية</button>
-    <button class="btn-icon" style="border-radius:50%;width:38px;height:38px;padding:0;justify-content:center;">👤</button>
-  </div>
-  <nav>
-    <a href="#" class="active">الرئيسية</a>
-    <a href="#">خطط رحلتك</a>
-    <a href="#">الوجهات</a>
-    <a href="#">رحلاتي المحفوظة</a>
-  </nav>
-</header>
+‏const DEST_IMAGES = {
+‏  riyadh: "https://images.unsplash.com/photo-1586724237569-f3d025d76a5c?auto=format&fit=crop&w=1200&q=85",
+‏  jeddah: "https://images.unsplash.com/photo-1578895101408-1a3640d782ea?auto=format&fit=crop&w=1200&q=85",
+‏  makkah: "https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?auto=format&fit=crop&w=1200&q=85",
+‏  madinah: "https://images.unsplash.com/photo-1564769625905-50e93615e769?auto=format&fit=crop&w=1200&q=85",
+‏  alula: "https://images.unsplash.com/photo-1682687220063-4742bd7fd538?auto=format&fit=crop&w=1200&q=85",
+‏  abha: "https://images.unsplash.com/photo-1618172193763-c511deb635ca?auto=format&fit=crop&w=1200&q=85",
+‏  taif: "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=85",
+‏  neom: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=85",
+‏  jazan: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=85",
+‏  khobar: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=85"
+};
 
-<main>
-  <div class="section-header">
-    <h2>السعودية، في فصول</h2>
-  </div>
+‏const dcard=i=>{
+‏  const d=D[i],r=RG[d.id];
+‏  return `
+‏  <a class="dc"
+‏     href="#dest-${d.id}"
+‏     style="
+‏       --h:${i*37%360};
+‏       background-color:hsl(${i*37%360} 22% 30%);
+‏       background-image:
+‏       linear-gradient(
+‏         180deg,
+‏         rgba(20,35,28,0.05) 20%,
+‏         rgba(20,35,28,0.88) 100%
+       ),
+‏       url('${DEST_IMAGES[d.id]}');
+‏       background-size:cover;
+‏       background-position:center;
+     ">
+‏    <span class="rg">${x(r.slice(0,2))}</span>
+‏    <b>${x(d.n)}</b>
+‏    <small>${x(r.slice(2))}</small>
+‏    <i class="ar">↗</i>
+‏  </a>`;
+};
 
-  <div class="grid">
-    <div class="card" style="background-image: url('https://images.unsplash.com/photo-1586724237569-f3d025d76a5c?auto=format&fit=crop&w=800&q=80')">
-      <div class="card-content">
-        <div class="region">الوسطى</div>
-        <div class="title">الرياض</div>
-        <div class="desc">تراث معاصر</div>
-      </div>
-      <div class="icon-btn">↗</div>
-    </div>
+‏function home(){return`<section class="hero"><div><h1>${t('hero')}</h1><p>${t('heroP')}</p><a class="btn" href="#plan">${L==='ar'?'←':'→'} ${t('go')}</a><a class="btn o" href="#dests">${t('ex')}</a><div class="idx"><button data-a="sc" data-i="s1">${t('i1')}</button><button data-a="sc" data-i="s2">${t('i2')}</button><button data-a="sc" data-i="s3">${t('i3')}</button></div></div></section>
+‏<p class="eb" id="s1">${t('eb')}</p><div class="hd2"><h2>${t('sT2')}</h2><a href="#dests" class="all">${t('all')} ${L==='ar'?'←':'→'}</a></div><div class="grid">${[0,1,4].map(i=>dcard(i)).join('')}</div>
+‏<h2 id="s2">${t('rT')}</h2><p class="sub">${t('rS')}</p><div class="grid">${RT.map((r,i)=>`<div class="card"><b>${x(r.n)}</b><p class="note">${r.days} ${L==='ar'?'أيام':'days'} · ${x(D.find(d=>d.id===r.d).n)}</p><button class="btn s" data-a="route" data-i="${i}">${t('go')}</button></div>`).join('')}</div>
+‏<h2 id="s3">${t('sT')}</h2><p class="sub">${t('sS')}</p><div class="grid">${ST.map(s=>`<div class="card"><b>${s[L==='ar'?0:1]}</b><p class="note">${s[L==='ar'?2:3]}</p></div>`).join('')}</div>
+‏<h2>${t('fT')}</h2><div class="grid">${t('why').map(w=>`<div class="card">${w}</div>`).join('')}</div>`}
+‏function dpage(id){const i=D.findIndex(d=>d.id===id);if(i<0)return home();const d=D[i],f=fav().includes(id);return`<h2>${d.e} ${x(d.n)}</h2><p class="sub">${x(d.d)}</p><button class="btn s" data-a="fav" data-i="${id}">${f?'♥':'♡'} ${t('favs')}</button><button class="btn s" data-a="here" data-i="${i}">${t('plHere')}</button>
+‏<div class="grid" style="margin-top:14px"><div class="card"><b>${t('hl')}</b>${d.a.map(a=>`<div class="it"><div>${x(a.n)}<small>${a.h} ${L==='ar'?'ساعة':'h'} · ${a.c?money(a.c):(L==='ar'?'مجاني':'Free')}</small></div><span>${a.c?money(a.c):(L==='ar'?'مجاني':'Free')}</span></div>`).join('')}</div>
+‏<div class="card"><b>${t('rs')}</b>${d.r.map(r=>`<p>${x(r)}</p>`).join('')}<b>${t('st')}</b>${d.h.map((h,j)=>`<div class="it"><span>${t('stay')[j]}</span><span>${money(h)}</span></div>`).join('')}</div>
+‏<div class="card"><b>${t('bt')}</b><p>${x(d.b)}</p><b>${t('tp')}</b><p>${x(d.t)}</p><p class="note">${t('est')}</p></div></div>`}
+‏const opt=(o,v)=>Object.entries(o).map(([k,l])=>`<option value="${k}"${k==v?' selected':''}>${l}</option>`).join('');
+‏function dateIn(k){const v=P[k];return P.cal==='h'?`<input data-f="${k}" value="${g2h(v)}" placeholder="1448/01/15" dir="ltr">`:`<input type="date" data-f="${k}" value="${v}">`}
+‏function plan(){return`<h2>${t('plan')}</h2><p class="sub">${t('est')}</p><div class="card"><div class="fm">
+‏<div><label>${t('dest')}</label><select data-f="dest"><option value="auto">${t('auto')}</option>${D.map(d=>`<option value="${d.id}"${P.dest===d.id?' selected':''}>${x(d.n)}</option>`).join('')}</select></div>
+‏<div><label>${t('cal')}</label><select data-f="cal">${opt({g:t('g'),h:t('h')},P.cal)}</select></div>
+‏<div><label>${t('sd')}</label>${dateIn('start')}<span class="note">${fd(P.start,P.cal==='h'?'g':'h')}</span></div>
+‏<div><label>${t('ed')}</label>${dateIn('end')}<span class="note">${fd(P.end,P.cal==='h'?'g':'h')}</span></div>
+‏<div><label>${t('ad')}</label><input type="number" min="1" max="20" data-f="adults" value="${P.adults}"></div>
+‏<div><label>${t('kd')}</label><input type="number" min="0" max="20" data-f="kids" value="${P.kids}"></div>
+‏<div><label>${t('inf')}</label><input type="number" min="0" max="10" data-f="inf" value="${P.inf}"></div>
+‏<div><label>${t('bg')}</label><input type="number" min="100" step="100" data-f="budget" value="${P.budget}"></div>
+‏<div><label>${t('ty')}</label><select data-f="type">${opt(t('types'),P.type)}</select></div>
+‏<div><label>${t('tr')}</label><select data-f="transport">${opt(t('trs'),P.transport)}</select></div>
+‏<div><label>${t('lv')}</label><select data-f="level">${opt(t('lvs'),P.level)}</select></div>
+‏<div><label>${t('md')}</label><select data-f="mode">${opt(t('mds'),P.mode)}</select></div>
+‏<div class="chips"><b>${t('int')}:</b>${['c','n','a','d','s','r'].map(c=>`<label><input type="checkbox" data-f="int" value="${c}"${P.interests.includes(c)?' checked':''}>${x(TG[c])}</label>`).join('')}</div></div>
+‏<p><button class="btn" data-a="gen">${t('gen')}</button> <span id="er" class="bad"></span></p></div><div id="res">${P.days?result():''}</div>`}
+‏function result(){const d=D[P.di],c=calc(P,P.days),rk=rank(P).filter(r=>r.i!==P.di),over=c.total-P.budget,l=lvl(P),cheap=rk.filter(r=>r.ok).slice(0,3);
+‏const chip=r=>`<button class="btn o s" data-a="switch" data-i="${r.i}">${x(D[r.i].n)} · ${money(r.total)}</button>`;
+‏return`<h2>${d.e} ${x(d.n)}</h2><div class="card"><b>${t('rec')}</b><p>${x(d.d)} ${x(d.b)}</p><p class="note">${t('md')}: ${t('mds')[P.mode]} · ${t('lv')}: ${t('lvs')[l]}</p><b>${t('alt')}</b><p>${rk.slice(0,3).map(chip).join(' ')}</p>${over>0?`<p class="bad">${t('over')} ${money(over)}</p><p>${t('cheap')}: ${cheap.map(chip).join(' ')||'—'}</p><button class="btn s" data-a="eco">${t('ecoB')}</button>`:''}</div>
+‏<h2>${t('itin')}</h2>${P.days.map((ids,j)=>{const dt=new Date(P.start+'T12:00:00');dt.setDate(dt.getDate()+j);const di=dt.toISOString().slice(0,10);let prev=null,end=0;const rows=ids.map((id,k)=>{const a=d.a[id];let tr='',st=[9,14,18.5][a.s];if(prev!==null){const dz=Math.abs(d.a[prev].z-a.z),km=dz?(dz>1?25:12):4,mn=Math.round(km*1.8)+5;tr=`<div class="tr">🚗 ${t('h1')} ${km} ${t('km')} · ${mn} ${t('mn')}</div>`;st=Math.max(st,end+mn/60)}end=st+a.h;prev=id;const hh=n=>String(Math.floor(n)).padStart(2,'0')+':'+String(Math.round(n%1*60)).padStart(2,'0');
+‏return tr+`<div class="it"><div>${hh(st)}–${hh(end)} · ${x(a.n)}<small>${a.h} ${L==='ar'?'ساعة':'h'} · ${a.c?money(a.c):(L==='ar'?'مجاني':'Free')}</small></div><div><button class="ib" data-a="up" data-d="${j}" data-j="${k}">↑</button> <button class="ib" data-a="dn" data-d="${j}" data-j="${k}">↓</button> <button class="ib" data-a="rm" data-d="${j}" data-j="${k}">✕</button></div></div>`}).join('');
+‏const un=d.a.map((a,i)=>[a,i]).filter(([a,i])=>!P.days.flat().includes(i));
+‏return`<div class="card day"><h3>${t('day')} ${j+1} · ${fd(di,P.cal)}</h3>${rows||`<p class="note">${t('free')}</p>`}<p class="note">🍽️ ${t('lunch')}: ${x(d.r[j%d.r.length])} · ${t('dinner')}: ${x(d.r[(j+1)%d.r.length])}<br>🏨 ${t('stay')[l]} · ${money(d.h[l])}</p>${un.length?`<select data-a="add" data-d="${j}"><option value="">${t('addA')}</option>${un.map(([a,i])=>`<option value="${i}">${x(a.n)}</option>`).join('')}</select>`:''}</div>`}).join('')}
+‏<h2>${t('bud')}</h2><div class="card"><table>${[['lodging','lod'],['transport','trn'],['food','fod'],['activities','act'],['tickets','tk'],['extras','exr']].map(([k,n])=>`<tr><td>${t(n)}</td><td><input type="number" min="0" data-k="${k}" value="${Math.round(c.r[k])}"> ${t('sr')}</td></tr>`).join('')}<tr><td><b>${t('tot')}</b></td><td><b>${money(c.total)}</b></td></tr><tr><td>${t('pp')}</td><td>${money(c.total/(+P.adults+ +P.kids+ +P.inf))}</td></tr><tr><td>${t('bdg')}</td><td>${money(P.budget)}</td></tr><tr><td>${t('rem')}</td><td class="${over>0?'bad':'ok'}">${money(P.budget-c.total)}</td></tr></table><div class="bar ${over>0?'x':''}"><i style="width:${Math.min(100,c.total/P.budget*100)}%"></i></div><p class="note">${t('est')}</p><button class="btn s" data-a="rst">${t('rst')}</button> <button class="btn s" data-a="save">${t('save')}</button> <span id="sv" class="ok"></span></div>`}
+‏function trips(){const tr=S.get('rl_tr',[]),fv=fav();return`<h2>${t('trips')}</h2>${tr.length?`<div class="grid">${tr.map(r=>`<div class="card"><b>${x(D[r.di].n)}</b><p class="note">${fd(r.start,r.cal,0)} · ${nDays(r)} ${L==='ar'?'أيام':'days'}</p><button class="btn s" data-a="open" data-i="${r.id}">${t('open')}</button> <button class="btn o s" data-a="del" data-i="${r.id}">${t('del')}</button></div>`).join('')}</div>`:`<p>${t('none')}</p><a class="btn" href="#plan">${t('go')}</a>`}<h2>${t('favs')}</h2>${fv.length?`<div class="grid">${fv.map(id=>dcard(D.findIndex(d=>d.id===id))).join('')}</div>`:`<p class="note">—</p>`}`}
+‏function render(){const h=location.hash.slice(1)||'home';hdr();document.documentElement.lang=L;document.documentElement.dir=L==='ar'?'rtl':'ltr';document.documentElement.dataset.theme=TH;
+‏$('#app').innerHTML=h==='plan'?plan():h==='dests'?`<h2>${t('dT')}</h2><div class="grid">${D.map((_,i)=>dcard(i)).join('')}</div>`:h==='trips'?trips():h.startsWith('dest-')?dpage(h.slice(5)):home();scrollTo(0,0)}
+‏function rr(){const s=scrollY;render();scrollTo(0,s)}
+‏function go(p){P=p;location.hash==='#plan'?rr():location.hash='plan'}
+‏document.addEventListener('click',e=>{const b=e.target.closest('[data-a]');if(!b||b.tagName==='SELECT')return;const a=b.dataset.a,i=b.dataset.i,j=+b.dataset.j,dd=+b.dataset.d;
+‏if(a==='sc'){document.getElementById(i).scrollIntoView({behavior:'smooth'})}
+‏else if(a==='lang'){L=L==='ar'?'en':'ar';S.set('rl_l',L);rr()}
+‏else if(a==='theme'){TH=TH==='dark'?'light':'dark';S.set('rl_t',TH);rr()}
+‏else if(a==='route'){const r=RT[i];go({...f0(),dest:r.d,type:r.ty,interests:r.i,end:iso(13+r.days)})}
+‏else if(a==='here')go({...f0(),dest:D[i].id});
+‏else if(a==='fav'){let f=fav();f=f.includes(i)?f.filter(v=>v!==i):[...f,i];S.set('rl_f',f);rr()}
+‏else if(a==='gen'){const ok=P.start&&P.end&&P.end>=P.start&&+P.adults>=1&&+P.budget>0&&nDays(P)<=14;if(!ok){$('#er').textContent=t('err');return}P.di=P.dest==='auto'?rank(P)[0].i:D.findIndex(d=>d.id===P.dest);P.days=gen(P,P.di);P.over={};$('#res').innerHTML=result();$('#res').scrollIntoView()}
+‏else if(a==='switch'){P.di=+i;P.dest=D[P.di].id;P.days=gen(P,P.di);P.over={};rr()}
+‏else if(a==='eco'){P.mode='eco';P.level=0;P.transport='pub';P.days=gen(P,P.di);P.over={};rr()}
+‏else if(a==='rst'){P.over={};rr()}
+‏else if(a==='up'||a==='dn'){const A_=P.days[dd],k=a==='up'?j-1:j+1;if(k>=0&&k<A_.length){[A_[j],A_[k]]=[A_[k],A_[j]];rr()}}
+‏else if(a==='rm'){P.days[dd].splice(j,1);rr()}
+‏else if(a==='save'){const tr=S.get('rl_tr',[]);if(!P.id)P.id=Date.now();const k=tr.findIndex(r=>r.id===P.id);k<0?tr.push(JSON.parse(JSON.stringify(P))):tr[k]=JSON.parse(JSON.stringify(P));S.set('rl_tr',tr);$('#sv').textContent=t('saved')}
+‏else if(a==='open'){go(S.get('rl_tr',[]).find(r=>r.id==i))}
+‏else if(a==='del'){S.set('rl_tr',S.get('rl_tr',[]).filter(r=>r.id!=i));rr()}});
+‏document.addEventListener('change',e=>{const el=e.target,f=el.dataset.f,k=el.dataset.k;
+‏if(el.dataset.a==='add'&&el.value!==''){P.days[+el.dataset.d].push(+el.value);rr();return}
+‏if(k){const v=el.value===''?null:+el.value;v==null?delete P.over[k]:P.over[k]=v;$('#res').innerHTML=result();return}
+‏if(!f)return;if(f==='int'){P.interests=[...document.querySelectorAll('[data-f=int]:checked')].map(c=>c.value)}
+‏else if((f==='start'||f==='end')&&P.cal==='h'){const g=h2g(el.value);if(g)P[f]=g;rr()}
+‏else if(f==='start'||f==='end'){P[f]=el.value;if(f==='start'&&P.end<P.start)P.end=P.start;rr()}
+‏else if(f==='cal'){P.cal=el.value;rr()}
+‏else P[f]=el.type==='number'?+el.value:el.value});
+‏addEventListener('hashchange',render);render();
+‏</script></body></html>
 
-    <div class="card" style="background-image: url('https://images.unsplash.com/photo-1578895101408-1a3640d782ea?auto=format&fit=crop&w=800&q=80')">
-      <div class="card-content">
-        <div class="region">البحر الأحمر</div>
-        <div class="title">جدة</div>
-        <div class="desc">ثقافة ساحلية</div>
-      </div>
-      <div class="icon-btn">↗</div>
-    </div>
-
-    <div class="card" style="background-image: url('https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?auto=format&fit=crop&w=800&q=80')">
-      <div class="card-content">
-        <div class="region">الغربية</div>
-        <div class="title">مكة المكرمة</div>
-        <div class="desc">وجهة العمرة</div>
-      </div>
-      <div class="icon-btn">↗</div>
-    </div>
-
-    <div class="card" style="background-image: url('https://images.unsplash.com/photo-1564769625905-50e93615e769?auto=format&fit=crop&w=800&q=80')">
-      <div class="card-content">
-        <div class="region">الغربية</div>
-        <div class="title">المدينة المنورة</div>
-        <div class="desc">سكينة وتمور</div>
-      </div>
-      <div class="icon-btn">↗</div>
-    </div>
-
-    <div class="card" style="background-image: url('https://images.unsplash.com/photo-1682687220063-4742bd7fd538?auto=format&fit=crop&w=800&q=80')">
-      <div class="card-content">
-        <div class="region">الشمال الغربي</div>
-        <div class="title">العلا</div>
-        <div class="desc">مناظر عريقة</div>
-      </div>
-      <div class="icon-btn">↗</div>
-    </div>
-
-    <div class="card" style="background-image: url('https://images.unsplash.com/photo-1618172193763-c511deb635ca?auto=format&fit=crop&w=800&q=80')">
-      <div class="card-content">
-        <div class="region">الجنوب</div>
-        <div class="title">أبها</div>
-        <div class="desc">ضباب وجبال</div>
-      </div>
-      <div class="icon-btn">↗</div>
-    </div>
-
-    <div class="card" style="background-image: url('https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=800&q=80')">
-      <div class="card-content">
-        <div class="region">الغربية</div>
-        <div class="title">الطائف</div>
-        <div class="desc">مصيف الورد</div>
-      </div>
-      <div class="icon-btn">↗</div>
-    </div>
-
-    <div class="card" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80')">
-      <div class="card-content">
-        <div class="region">الشمال الغربي</div>
-        <div class="title">نيوم وتبوك</div>
-        <div class="desc">شواطئ وأودية</div>
-      </div>
-      <div class="icon-btn">↗</div>
-    </div>
-
-    <div class="card" style="background-image: url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80')">
-      <div class="card-content">
-        <div class="region">الجنوب</div>
-        <div class="title">جازان</div>
-        <div class="desc">جزر وتراث</div>
-      </div>
-      <div class="icon-btn">↗</div>
-    </div>
-
-    <div class="card" style="background-image: url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80')">
-      <div class="card-content">
-        <div class="region">الشرقية</div>
-        <div class="title">الخبر والدمام</div>
-        <div class="desc">كورنيش الخليج</div>
-      </div>
-      <div class="icon-btn">↗</div>
-    </div>
-  </div>
-</main>
-
-<footer>
-  رحلتي - منصة تخطيط الرحلات داخل السعودية. تُحفظ رحلاتك في هذا المتصفح فقط.
-</footer>
-
-</body>
-</html>
