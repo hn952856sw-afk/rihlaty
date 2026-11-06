@@ -6,28 +6,25 @@
 <title>رحلتي - رفيقك للسفر في السعودية</title>
 <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@700&family=Noto+Naskh+Arabic:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0f1813;--card:#18261e;--card-border:rgba(255,255,255,0.08);--tx:#f4f0e6;--mu:rgba(244,240,230,0.6);--gold:#d4af37;--gold-hover:#e5c158}
-:root[data-theme="light"]{--bg:#f9f8f3;--card:#ffffff;--card-border:rgba(0,0,0,0.08);--tx:#1c2b21;--mu:rgba(28,43,33,0.6)}
+:root{--bg:#0f1813;--card:#18261e;--card-border:rgba(255,255,255,0.08);--tx:#f4f0e6;--mu:rgba(244,240,230,0.6);--gold:#d4af37}
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:var(--bg);color:var(--tx);font-family:'Noto Naskh Arabic',serif;line-height:1.6;-webkit-font-smoothing:antialiased}
-header{position:sticky;top:0;background:var(--bg);backdrop-filter:blur(10px);z-index:100;padding:16px 20px;border-bottom:1px solid var(--card-border);display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:15px}
+header{position:sticky;top:0;background:rgba(15,24,19,0.95);backdrop-filter:blur(10px);z-index:100;padding:16px 20px;border-bottom:1px solid var(--card-border);display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:15px}
 .logo-container{display:flex;align-items:center;gap:8px}
 .logo{font:700 28px/1 'Aref Ruqaa',serif;color:var(--tx);text-decoration:none}
 .dot{width:6px;height:6px;background:var(--gold);border-radius:50%}
 .sub-logo{font-size:12px;color:var(--mu)}
 .actions{display:flex;align-items:center;gap:12px}
-.btn-icon{background:none;border:1px solid var(--card-border);color:var(--tx);padding:8px 12px;border-radius:20px;cursor:pointer;font-size:14px;display:flex;align-items:center;gap:6px}
+.btn-icon{background:none;border:1px solid var(--card-border);color:var(--tx);padding:8px 12px;border-radius:20px;cursor:pointer;font-size:14px}
 nav{width:100%;display:flex;gap:20px;border-top:1px solid var(--card-border);padding-top:12px;margin-top:4px}
-nav a{color:var(--mu);text-decoration:none;font-size:14px;transition:0.2s}
-nav a:hover,nav a.active{color:var(--gold);font-weight:700}
+nav a{color:var(--mu);text-decoration:none;font-size:14px}
+nav a.active{color:var(--gold);font-weight:700}
 main{max-width:1100px;margin:0 auto;padding:24px 20px 80px}
 .section-header{display:flex;justify-content:space-between;align-items:baseline;margin:30px 0 20px}
 h2{font:500 26px/1.3 'Noto Naskh Arabic',serif}
-.see-all{color:var(--tx);text-decoration:none;font-size:14px;opacity:0.8}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px}
-.card{position:relative;height:380px;border-radius:20px;overflow:hidden;background-size:cover;background-position:center;display:flex;flex-direction:column;justify-content:flex-end;padding:24px;border:1px solid var(--card-border);box-shadow:0 8px 24px rgba(0,0,0,0.2);text-decoration:none;color:#fff}
-.card::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 20%,rgba(0,0,0,0.85) 100%);transition:0.3s}
-.card:hover::before{background:linear-gradient(180deg,rgba(0,0,0,0.1) 10%,rgba(0,0,0,0.95) 100%)}
+.card{position:relative;height:380px;border-radius:20px;overflow:hidden;background-size:cover;background-position:center;display:flex;flex-direction:column;justify-content:flex-end;padding:24px;border:1px solid var(--card-border);box-shadow:0 8px 24px rgba(0,0,0,0.2);color:#fff}
+.card::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 30%,rgba(0,0,0,0.85) 100%)}
 .card-content{position:relative;z-index:2}
 .region{font-size:12px;color:var(--gold);font-weight:700;margin-bottom:4px}
 .title{font:700 26px/1.2 'Noto Naskh Arabic',serif;margin-bottom:4px}
@@ -42,29 +39,26 @@ footer{text-align:center;padding:40px 20px;font-size:13px;color:var(--mu);border
   <div class="logo-container">
     <a href="#" class="logo">رحلتي</a>
     <span class="dot"></span>
-    <span class="sub-logo" id="subLogo">رفيقك للسفر في السعودية</span>
+    <span class="sub-logo">رفيقك للسفر في السعودية</span>
   </div>
   <div class="actions">
-    <button class="btn-icon" id="langBtn">الإنجليزية</button>
-    <button class="btn-icon" id="themeBtn">☀️</button>
+    <button class="btn-icon">الإنجليزية</button>
     <button class="btn-icon" style="border-radius:50%;width:38px;height:38px;padding:0;justify-content:center;">👤</button>
   </div>
   <nav>
-    <a href="#" class="active" id="navHome">الرئيسية</a>
-    <a href="#" id="navPlan">خطط رحلتك</a>
-    <a href="#" id="navDest">الوجهات</a>
-    <a href="#" id="navSaved">رحلاتي المحفوظة</a>
+    <a href="#" class="active">الرئيسية</a>
+    <a href="#">خطط رحلتك</a>
+    <a href="#">الوجهات</a>
+    <a href="#">رحلاتي المحفوظة</a>
   </nav>
 </header>
 
 <main>
   <div class="section-header">
-    <h2 id="secTitle">السعودية، في فصول</h2>
-    <a href="#" class="see-all" id="seeAll">عرض الكل ←</a>
+    <h2>السعودية، في فصول</h2>
   </div>
 
   <div class="grid">
-    <!-- الرياض -->
     <div class="card" style="background-image: url('https://images.unsplash.com/photo-1586724237569-f3d025d76a5c?auto=format&fit=crop&w=800&q=80')">
       <div class="card-content">
         <div class="region">الوسطى</div>
@@ -74,7 +68,6 @@ footer{text-align:center;padding:40px 20px;font-size:13px;color:var(--mu);border
       <div class="icon-btn">↗</div>
     </div>
 
-    <!-- جدة -->
     <div class="card" style="background-image: url('https://images.unsplash.com/photo-1578895101408-1a3640d782ea?auto=format&fit=crop&w=800&q=80')">
       <div class="card-content">
         <div class="region">البحر الأحمر</div>
@@ -84,7 +77,6 @@ footer{text-align:center;padding:40px 20px;font-size:13px;color:var(--mu);border
       <div class="icon-btn">↗</div>
     </div>
 
-    <!-- مكة المكرمة -->
     <div class="card" style="background-image: url('https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?auto=format&fit=crop&w=800&q=80')">
       <div class="card-content">
         <div class="region">الغربية</div>
@@ -94,7 +86,6 @@ footer{text-align:center;padding:40px 20px;font-size:13px;color:var(--mu);border
       <div class="icon-btn">↗</div>
     </div>
 
-    <!-- المدينة المنورة -->
     <div class="card" style="background-image: url('https://images.unsplash.com/photo-1564769625905-50e93615e769?auto=format&fit=crop&w=800&q=80')">
       <div class="card-content">
         <div class="region">الغربية</div>
@@ -104,7 +95,6 @@ footer{text-align:center;padding:40px 20px;font-size:13px;color:var(--mu);border
       <div class="icon-btn">↗</div>
     </div>
 
-    <!-- العلا -->
     <div class="card" style="background-image: url('https://images.unsplash.com/photo-1682687220063-4742bd7fd538?auto=format&fit=crop&w=800&q=80')">
       <div class="card-content">
         <div class="region">الشمال الغربي</div>
@@ -114,7 +104,6 @@ footer{text-align:center;padding:40px 20px;font-size:13px;color:var(--mu);border
       <div class="icon-btn">↗</div>
     </div>
 
-    <!-- أبها -->
     <div class="card" style="background-image: url('https://images.unsplash.com/photo-1618172193763-c511deb635ca?auto=format&fit=crop&w=800&q=80')">
       <div class="card-content">
         <div class="region">الجنوب</div>
@@ -124,7 +113,6 @@ footer{text-align:center;padding:40px 20px;font-size:13px;color:var(--mu);border
       <div class="icon-btn">↗</div>
     </div>
 
-    <!-- الطائف -->
     <div class="card" style="background-image: url('https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=800&q=80')">
       <div class="card-content">
         <div class="region">الغربية</div>
@@ -134,7 +122,6 @@ footer{text-align:center;padding:40px 20px;font-size:13px;color:var(--mu);border
       <div class="icon-btn">↗</div>
     </div>
 
-    <!-- نيوم وتبوك -->
     <div class="card" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80')">
       <div class="card-content">
         <div class="region">الشمال الغربي</div>
@@ -144,7 +131,6 @@ footer{text-align:center;padding:40px 20px;font-size:13px;color:var(--mu);border
       <div class="icon-btn">↗</div>
     </div>
 
-    <!-- جازان -->
     <div class="card" style="background-image: url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80')">
       <div class="card-content">
         <div class="region">الجنوب</div>
@@ -154,7 +140,6 @@ footer{text-align:center;padding:40px 20px;font-size:13px;color:var(--mu);border
       <div class="icon-btn">↗</div>
     </div>
 
-    <!-- الخبر والدمام -->
     <div class="card" style="background-image: url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80')">
       <div class="card-content">
         <div class="region">الشرقية</div>
@@ -170,18 +155,5 @@ footer{text-align:center;padding:40px 20px;font-size:13px;color:var(--mu);border
   رحلتي - منصة تخطيط الرحلات داخل السعودية. تُحفظ رحلاتك في هذا المتصفح فقط.
 </footer>
 
-<script>
-const themeBtn = document.getElementById('themeBtn');
-themeBtn.addEventListener('click', () => {
-  const current = document.documentElement.getAttribute('data-theme');
-  if(current === 'light'){
-    document.documentElement.removeAttribute('data-theme');
-    themeBtn.textContent = '☀️';
-  } else {
-    document.documentElement.setAttribute('data-theme', 'light');
-    themeBtn.textContent = '🌙';
-  }
-});
-</script>
 </body>
 </html>
